@@ -2,8 +2,12 @@ import streamlit as st
 import pandas as pd
 #import matplotlib.pyplot as plt
 
+st.set_page_config(page_title="Transaction Analyzer",
+                   page_icon=":bar_chart:",
+                   )
+
 # Load Excel file
-uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx", "txt"])
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file, index_col=None)
