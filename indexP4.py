@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # Load Excel file
 uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
